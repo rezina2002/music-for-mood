@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringJUnitWebConfig(Application.class)
-public class MoodControllerTest {
+class MoodControllerTest {
 
     MockMvc mockMvc;
 
@@ -22,7 +22,7 @@ public class MoodControllerTest {
     }
 
     @Test
-    public void testMain() throws Exception {
+    void testMain() throws Exception {
         mockMvc.perform(get("/main")).andExpect(status().isOk());
     }
 }

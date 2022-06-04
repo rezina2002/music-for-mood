@@ -1,6 +1,5 @@
 package ru.mirea.ikb.mood.repository.impl;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.internal.util.collections.Sets;
 import ru.mirea.ikb.mood.dto.Playlist;
@@ -8,16 +7,14 @@ import ru.mirea.ikb.mood.dto.Playlist;
 import java.util.Collection;
 import java.util.Optional;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
-public class MoodRepositoryImplTest {
+class MoodRepositoryImplTest {
 
     private final MoodRepositoryImpl moodRepository = new MoodRepositoryImpl();
 
     @Test
-    public void testAddAndFind() {
+    void testAddAndFind() {
         assertTrue(moodRepository.findAllMoods().isEmpty());
         Playlist pl1 = new Playlist("pl1", "url1");
         Playlist pl2 = new Playlist("pl2", "url2");

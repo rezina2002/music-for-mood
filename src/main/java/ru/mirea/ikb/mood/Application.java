@@ -7,7 +7,7 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
- * Главный класс для запуска приложения SpringBoot
+ *
  */
 @ServletComponentScan
 @SpringBootApplication(scanBasePackages = "ru.mirea.ikb.mood")

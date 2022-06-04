@@ -1,0 +1,21 @@
+body {
+  margin: 20px;
+}
+
+.mood {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+div#box a:visited {
+    color: white;
+}
